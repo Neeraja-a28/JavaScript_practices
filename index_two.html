@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Practice</title>
+
+	<script>
+		function message(){
+			alert("student marks are entered sucessfully!");
+		}
+	</script>
+
+
+	<script>
+		document.write("Hello new javascript!..");
+
+		function getDetails(){
+     		var num =  document.getElementById("number").value;
+     		alert(num * num);
+		}
+
+		function totalelements(argument) {
+	  		var total =  document.getElementsByName("gender");
+	  		alert(total.length);
+		}
+
+		function countDetails(){
+			var count = document.getElementsByTagName("h2");
+			document.write(count.length);
+		}
+
+	</script>
+	</br>
+
+	<script>
+		var add = new Function("num1","num2", "return num1 + num2")
+		document.writeln(add(4,8));
+	</script>
+	</br>
+	</br>
+
+
+</head>
+
+<body>
+	<form>
+		<input type="button" value="click" onclick="message()">
+	</form>
+
+
+	<form>
+		Enter number: <input type="text" name="number" id="number"></br>
+		<input type="button" value="check here" onclick="getDetails()"></br></br>
+
+		Male: <input type="radio" name="gender" value="male">
+		Female: <input type="radio" name="gender" value="female">
+
+
+		<input type="button" onclick="totalelements()" value="TotalMembers"></br>
+
+		<input type = "button" onclick="countDetails()" value="click on"></input>
+	</form>
+
+    
+    <form>
+		Enter number: <input type="text" name="number" id="number"></br>
+		<input type="button" value="check here" onclick="getDetails()"></br></br>
+
+		Male: <input type="radio" name="gender" value="male">
+		Female: <input type="radio" name="gender" value="female">
+
+
+		<input type="button" onclick="totalelements()" value="TotalMembers"></br>
+
+		<input type = "button" onclick="countDetails()" value="click on"></input>
+	</form>
+</body>
+
+</br>
+</br>
+<a href="index.html">Back To Main Page</a>
+
+</html>

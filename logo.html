@@ -1,0 +1,34 @@
+
+<!--event handler task like addEventListener, onclick, ond bclick -->
+
+<html>
+	<head>
+	<title>Logo Page</title>
+	<p> Example of the addEventListener() method. </p>  
+	<button id = "name">Click Here</button>
+	<p id = "log"></p>
+	<p id = "log1"></p>
+	<h3 id = "log2" ondblclick="logo_test_three()">New Logo</h3>
+	</head>
+
+	<body>
+		<script>
+			var event = document.getElementById("name")
+			event.addEventListener("click", logo_test);
+			event.addEventListener("click", logo_test_two);
+			//event.addEventListener("click", logo_test_three);
+
+			function logo_test() {
+				document.getElementById("log").innerHTML = "Welcome to" + " "+ "Hello Word";
+			}
+
+			function logo_test_two(){
+				document.getElementById("log1").innerText = 'New to Java Script';
+			}
+
+			function logo_test_three(){
+				document.getElementById("log2").innerText = 'New Logo is created Successfully';
+			}
+		</script>
+	</body>
+</html>
