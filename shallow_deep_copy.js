@@ -22,6 +22,4 @@ person3.address.city = "banglore";
 
 console.log(person.address.city);  // Output: hyd (Original object is NOT affected)
 
-console.log(person3.address.city); // Output: bangalore (Copied object reflects the change)
-
-  
+console.log(person3.address.city);  // Output: banglore (Copied object reflects the change)
